@@ -13,17 +13,6 @@ export default function RootLayout() {
     return null;
   }
 
-  // Anonymous sign in (only once on app start)
-  // useEffect(() => {
-  //   signInAnonymously(auth)
-  //     .then(() => {
-  //       console.log("Signed in anonymously")
-  //     })
-  //     .catch((error) => {
-  //       console.error("Sign in error: ", error)
-  //     })
-  // }, [])
-
   return (
     <ThemeProvider value={DarkTheme}>
       <Stack>

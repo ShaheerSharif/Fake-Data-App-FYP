@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+const EMAIL = "abcd@gmail.com"
+const PASSWORD = "222222"
+
 export default function LoginScreen() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
 
@@ -23,7 +26,7 @@ export default function LoginScreen() {
 
   const handleSignIn = async () => {
     try {
-      const result = await signInWithEmailAndPassword(auth, "abcd@gmail.com", "123456")
+      await signInWithEmailAndPassword(auth, EMAIL, PASSWORD)
     } catch (error) {
       console.error("Sign-in error: ", error)
     }
