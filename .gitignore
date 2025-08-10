@@ -39,3 +39,25 @@ yarn-error.*
 app-example
 
 firebaseConfig.ts
+
+# Android
+/android/.gradle/
+/android/app/build/
+/android/build/
+/android/.idea/
+/android/.cxx/
+/android/local.properties
+/android/*.iml
+/android/gradle/wrapper/gradle-wrapper.properties.lock
+
+# Signing (DO NOT COMMIT YOUR KEYSTORE)
+android/app/my-release-key.keystore
+*.jks
+*.keystore
+
+# NDK/Build cache
+**/build/
+*.apk
+*.aar
+*.lock
+*.log
